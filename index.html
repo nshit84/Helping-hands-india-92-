@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Helping Hands India</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+<button id="topBtn" onclick="topFunction()">⬆</button>
+
+<button id="themeBtn" onclick="toggleTheme()">🌙</button>
+<body>
+
+<header>
+
+<div class="logo">
+❤️ Helping Hands India
+</div>
+
+<nav>
+<a href="#home">Home</a>
+<a href="#about">About</a>
+<a href="#gallery">Gallery</a>
+<div id="donateModal" class="modal">
+    <div class="modal-content">
+        <span class="close-btn">&times;</span>
+        <h2>Thank You!</h2>
+        <p>Your support means a lot to us.</p>
+    </div>
+</div>
+
+<a href="#contact">Contact</a>
+</nav>
+
+</header>
+
+<section class="hero" id="home">
+
+<div class="hero-content">
+
+<h1>
+Support Differently Abled People
+</h1>
+
+<p>
+Every ₹200 donation can make someone's life better.
+Join Helping Hands India and spread kindness.
+</p>
+
+<button onclick="openDonate()">
+❤️ Donate Now
+</button>
+
+</div>
+
+</section>
+
+<section id="about">
+
+<h2>About Helping Hands India</h2>
+
+<p>
+Helping Hands India is a charity initiative dedicated to supporting differently-abled people by providing medical help, education support and daily essential needs through public donations.
+</p>
+
+</section>
+
+
+<h2>About Helping Hands India</h2>
+
+<p>
+
+Helping Hands India is a charity initiative dedicated to supporting differently-abled people by providing medical help, education support and daily essential needs through public donations.
+
+</p>
+
+</section>
+
+<section class="donation">
+
+<h2>Fund Progress</h2>
+<section class="stats">
+
+<div class="stat-box">
+<h2 id="donors">0</h2>
+<p>Donors</p>
+</div>
+
+<div class="stat-box">
+<h2 id="raised">70000</h2>
+<p>Amount Raised</p>
+</div>
+
+<div class="stat-box">
+<h2 id="volunteers">25</h2>
+<p>Volunteers</p>
+</div>
+
+</section>
+<div class="progress">
+
+<div class="bar">
+35%
+</div>
+
+</div>
+
+<p>
+₹70,000 Raised of ₹2,00,000
+</p>
+
+</section>
+<section id="gallery">
+<section id="testimonials">
+
+<h2>What People Say</h2>
+
+<div class="testimonial-container">
+
+<div class="testimonial">
+<h3>⭐⭐⭐⭐⭐</h3>
+<p>
+"Helping Hands India is doing an amazing job for differently abled people."
+</p>
+<h4>- Rahul Patil</h4>
+</div>
+
+<div class="testimonial">
+<h3>⭐⭐⭐⭐⭐</h3>
+<p>
+"My donation reached the right people. Thank you for your honest work."
+</p>
+<h4>- Sneha Kulkarni</h4>
+</div>
+
+<div class="testimonial">
+<h3>⭐⭐⭐⭐⭐</h3>
+<p>
+"I encourage everyone to support this initiative."
+</p>
+<h4>- Amit Shinde</h4>
+</div>
+
+</div>
+
+</section>
+<h2>Our Gallery</h2>
+
+<div class="gallery">
+
+<img src="images/gallery1.jpg" alt="Gallery 1">
+
+<img src="images/gallery2.jpg" alt="Gallery 2">
+
+<img src="images/gallery3.jpg" alt="Gallery 3">
+
+</div>
+
+</section>
+
+<section id="contact">
+
+<h2>Contact Us</h2>
+
+<p>📞 9272065482</p>
+
+<a href="https://wa.me/919272065482" target="_blank">
+Chat on WhatsApp
+</a>
+
+</section>
+
+<div id="popup">
+
+<div class="box">
+
+f<h2>Donate Now ❤️</h2>
+
+<img src="images/qr.png" alt="QR Code">
+
+<p><strong>UPI ID:</strong><br>9272065482-2@axl</p>
+
+<div class="amounts">
+
+<button onclick="setAmount(200)">₹200</button>
+
+<button onclick="setAmount(500)">₹500</button>
+
+<button onclick="setAmount(1000)">₹1000</button>
+
+<button onclick="setAmount(2000)">₹2000</button>
+
+</div>
+
+<input type="number" id="customAmount" placeholder="Enter Amount">
+
+<p id="selectedAmount">Selected: ₹200</p>
+
+<button onclick="copyUPI()">Copy UPI ID</button>
+
+<br><br>
+
+<button onclick="closeDonate()">Close</button>
+
+</div>
+
+</div>
+<footer>
+
+<h2>Helping Hands India ❤️</h2>
+
+<p>Together We Can Make a Difference</p>
+
+<p>📞 9272065482</p>
+
+<p>UPI: 9272065482-2@axl</p>
+
+<p>© 2026 Helping Hands India. All Rights Reserved.</p>
+
+</footer>
+<script src="script.js"></script>
+<a href="https://wa.me/919272065482" class="whatsapp-float" target="_blank">
+    <i class="fa-brands fa-whatsapp"></i>
+</a>
+<a href="#" class="donate-float" onclick="openDonate()">
+❤️ Donate
+</a>
+</body>
+<div id="loader">
+    <h2>Helping Hands India ❤️</h2>
+</div>
+</html>
